@@ -1,0 +1,15 @@
+.Block{
+    display:inline-block;
+    align-items: flex-end;
+    position: relative;
+    height: 500px;
+    width:300px;
+   margin: 20px;
+}
+.items{
+    display: inline-block;
+    align-items: center;
+    max-width: 50%;
+    height: 100%;
+
+}
