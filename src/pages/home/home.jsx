@@ -1,39 +1,35 @@
-import React, {useEffect, useState} from 'react';
-import {Link} from "react-router-dom";
-import './home.css'
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "./home.css";
 import Header from "../../components/header/header";
-import Footer from "../../components/footer/footer";
+import { fetchData } from "../../store/actions";
+import { connect } from "react-redux";
 
-const Home = () => {
-  // const [error, setError] = useState(null);
-  // const [isLoaded, setIsLoaded] = useState(false);
-  const [data, setData] = useState([]);
+const Home = ({ fetchData, fetching }) => {
   useEffect(() => {
-    fetch('https://gist.githubusercontent.com/YaMorozoff/2aa2f74d4dc616449bdc5ad69d63ab8b/raw/79a1a6e1f8df130f2d1f1091d1957d4405543cd8/gistfile1.json')
-      .then(response => response.json())
-      .then(result => {
-        setData(result);
-      });
-  },[]);
-  return(
+    fetchData();
+  }, []);
+
+  return (
     <div className="App">
-      <Header/>
-      <ul className="items">
-        {data.map((item, i) => (
-          console.log(item),
+      <Header />
+      {fetching.map((item, i) => (
+        <ul className="items">
           <li className="Block" key={i}>
-            <img src={item.url} alt="NONE"/>
+            <img src={item.url} alt="NONE" />
             <p>{item.decription}</p>
             <p>{item.price}</p>
             <p>{item.size}</p>
-            <button><Link to = "/basket" >В корзину </Link></button>
+            <button>В корзину </button>
           </li>
-        ))}
-      </ul>
-      <Footer/>
+        </ul>
+      ))}
     </div>
-
-  )
+  );
 };
 
-export default Home;
+const mapStateToProps = (state) => ({
+  fetching: state.fetching,
+});
+const mapDispatchToProps = { fetchData };
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

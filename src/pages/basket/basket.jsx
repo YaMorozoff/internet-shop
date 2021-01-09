@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from "../../components/header/header";
-import Footer from "../../components/footer/footer";
 import listLogo from "../../images/1.png";
 import "./basket.css"
 
 const Basket = () => {
+
   return (
     <div>
        <Header/>
@@ -34,8 +34,6 @@ const Basket = () => {
 
         </div>
 
-
-      <Footer/>
     </div>
   );
 };
