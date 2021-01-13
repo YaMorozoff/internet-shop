@@ -13,3 +13,6 @@
     padding: 2px;
     border: 1px solid black;
 }
+.ui.menu.menu-mrg{
+    margin-bottom: 30px;
+}

@@ -7,7 +7,7 @@ import logo from "./logo.png";
 const Header = (props) => {
   return (
     <Sticky>
-      <Menu inverted icon="labeled">
+      <Menu className="menu-mrg" inverted icon="labeled">
         <Container>
           {<Image size="small" src={logo}></Image>}
           <Menu.Item as={Link} to="/">
