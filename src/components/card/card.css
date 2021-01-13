@@ -1,0 +1,17 @@
+.add-btn{
+    display:block;
+    background: lightgreen;
+    height: 40px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+.added-btn{
+    display:block;
+    background: orange;
+    height: 40px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+

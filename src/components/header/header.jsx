@@ -1,28 +1,30 @@
-import React from 'react';
-import basketLogo from "../../images/2.png";
+import React from "react";
+import { Link } from "react-router-dom";
+import { Container, Icon, Image, Menu, Sticky } from "semantic-ui-react";
+import "./header.css";
+import logo from "./logo.png";
 
-import './header.css'
-import {Link} from "react-router-dom";
-
-const Header = () => {
+const Header = (props) => {
   return (
-    <div className="Header">
+    <Sticky>
+      <Menu inverted icon="labeled">
+        <Container>
+          {<Image size="small" src={logo}></Image>}
+          <Menu.Item as={Link} to="/">
+            <Icon name="home" />
+            Главная
+          </Menu.Item>
+          <Menu.Item as={Link} to="basket">
+            <div className={props.sum ? "sum-logo" : "sum-logo-off"}>
+              {props.sum}
+            </div>
+            <Icon size="massive" name="shopping cart" />
 
-
-        <div className="siteName">
-          <Link to = "/" >
-          MAGAZINE
-          </Link>
-        </div>
-          <Link to = "/basket" >
-          <img className="basketLogoImg" src={basketLogo} alt="none"/>
-          <div className="basketCounter">
-            1
-          </div>
-          <div className="headerText">Корзина</div>
-          </Link>
-        </div>
-
+            <p>Корзина</p>
+          </Menu.Item>
+        </Container>
+      </Menu>
+    </Sticky>
   );
 };
 

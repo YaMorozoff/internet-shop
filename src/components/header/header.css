@@ -1,95 +1,15 @@
-button{
-    width: 150px;
+.sum-logo-off{
+    display: none;
 }
-.headerText{
-    font-weight: 500;
-    text-decoration: none;
-}
-.Header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-.magazineName{
-    display: flex;
-
-}
-.headerUp{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-}
-.headerDown{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-height: 100px;
-}
-.listImageBtn{
-    display: flex;
-    align-items: center;
-}
-.listImage{
-    height: 50px;
-    width: 50px;
-    padding-right: 50px;
-}
-.siteName{
-    display: flex;
-    align-items: flex-end;
-    font-size: 100px;
-}
-.basketLogo{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 50px;
-
-}
-.basketLogoImg{
-    height:30px;
-    width: 30px;
-}
-.userLogo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 50px;
-
-}
-.userLogoImg{
-    height:30px;
-    width: 30px;
-}
-.searchLogo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-right: 50px;
-}
-.searchLogoImg{
-    height: 20px;
-    width: 20px;
-
-}
-.basketCounter{
-    position: absolute;
-    z-index: 1;
-    right:8px;
-    top:33px;
-    height: 25px;
-    width: 25px;
-    border-radius: 25px;
+.sum-logo{
     background: darkorange;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top:6px;
+    right: 20px;
+    text-align: center;
+    padding: 2px;
+    border: 1px solid black;
 }

@@ -1,41 +1,74 @@
-import React from 'react';
+import React from "react";
 import Header from "../../components/header/header";
-import listLogo from "../../images/1.png";
-import "./basket.css"
+import { Button, Container, Item, Statistic } from "semantic-ui-react";
+import CartItem from "../../components/cartItem/CartItem";
+import { deleteFromCart } from "../../store/actions/deletefromcartAction";
+import { connect } from "react-redux";
+import { incrementItem } from "../../store/actions/icrementAction";
+import { decrementItem } from "../../store/actions/decrementAction";
+import "./basket.css";
 
-const Basket = () => {
-
+const Basket = ({
+  deleteFromCart,
+  incrementItem,
+  decrementItem,
+  cart,
+  sum,
+  totalPrice,
+  count,
+}) => {
   return (
-    <div>
-       <Header/>
-        <div className="basketTable">
-
-          <div className="basketTitle">
-            Заказ
-          </div>
-
-          <div className="basketOrder">
-            <div > <img className="basketOrderImg" src={listLogo} alt="none"/></div>
-            <div className="basketOrderTitle">
-              <div className="basketOrderTitle1">qwdqwdqwdqwdqedqed</div>
-              <div className="basketOrderOption"> owedc2qpoewchpwijec3pw</div>
-            </div>
-            <div className="basketOrderPrice">112341234</div>
-          </div>
-
-          <div className="basketOrder">
-            <div > <img className="basketOrderImg" src={listLogo} alt="none"/></div>
-            <div className="basketOrderTitle">
-              <div className="basketOrderTitle1">qwdqwdqwdqwdqedqed</div>
-              <div className="basketOrderOption"> owedc2qpoewchpwijec3pw</div>
-            </div>
-            <div className="basketOrderPrice">112341234</div>
-          </div>
-
-        </div>
-
+    <div className="App">
+      <Header totalPrice={totalPrice} sum={sum} />
+      {!count ? (
+        <h1>Ваша корзина пуста</h1>
+      ) : (
+        <Container>
+          <Statistic>
+            <Statistic.Label>Итого:</Statistic.Label>
+            <Statistic.Value>{totalPrice}</Statistic.Value>
+          </Statistic>
+          <Button
+            basic
+            color="green"
+            size="massive"
+            floated="right"
+            style={{ marginTop: "15px" }}
+          >
+            Оформить заказ
+          </Button>
+          <hr />
+          <Item.Group>
+            {cart.map(function (item, i) {
+              return (
+                <CartItem
+                  key={i}
+                  url={item.url}
+                  decription={item.decription}
+                  size={item.size}
+                  price={item.price}
+                  delete={deleteFromCart.bind(this, item)}
+                  counter={item.count}
+                  plus={incrementItem.bind(this, item)}
+                  minus={decrementItem.bind(this, item)}
+                />
+              );
+            })}
+          </Item.Group>
+        </Container>
+      )}
     </div>
   );
 };
 
-export default Basket;
+const mapStateToProps = ({ cart }) => ({
+  cart: cart.items,
+  count: cart.items.length,
+  sum: cart.items.reduce((sum, item) => sum + item.count, 0),
+  totalPrice: cart.items.reduce(
+    (total, item) => total + item.price * item.count,
+    0
+  ),
+});
+const mapDispatchToProps = { deleteFromCart, incrementItem, decrementItem };
+export default connect(mapStateToProps, mapDispatchToProps)(Basket);
