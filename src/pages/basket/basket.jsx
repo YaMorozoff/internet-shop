@@ -7,6 +7,7 @@ import { connect } from "react-redux";
 import { incrementItem } from "../../store/actions/icrementAction";
 import { decrementItem } from "../../store/actions/decrementAction";
 import "./basket.css";
+import Amount from "arui-feather/amount";
 
 const Basket = ({
   deleteFromCart,
@@ -17,16 +18,25 @@ const Basket = ({
   totalPrice,
   count,
 }) => {
+  const AMOUNT = {
+    value: totalPrice,
+    currency: {
+      code: "RUR",
+      minority: 1,
+    },
+  };
   return (
     <div className="App">
-      <Header totalPrice={totalPrice} sum={sum} />
+      <Header sum={sum} />
       {!count ? (
         <h1>Ваша корзина пуста</h1>
       ) : (
         <Container>
           <Statistic>
             <Statistic.Label>Итого:</Statistic.Label>
-            <Statistic.Value>{totalPrice}</Statistic.Value>
+            <Statistic.Value>
+              <Amount size={"xxl"} amount={AMOUNT} />
+            </Statistic.Value>
           </Statistic>
           <Button
             basic

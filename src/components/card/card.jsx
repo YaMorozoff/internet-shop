@@ -1,7 +1,17 @@
 import React from "react";
 import { Button, ButtonGroup, Card, Image } from "semantic-ui-react";
 import "./card.css";
+
+import Amount from "arui-feather/amount";
+
 const CardEl = (item) => {
+  const AMOUNT = {
+    value: item.price,
+    currency: {
+      code: "RUR",
+      minority: 1,
+    },
+  };
   return (
     <Card key={item.id}>
       <Image src={item.url} wrapped ui={false} />
@@ -13,7 +23,7 @@ const CardEl = (item) => {
       </Card.Content>
       <Card.Content extra>
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <a>{item.price}$</a>
+        <Amount amount={AMOUNT} />
       </Card.Content>
       {item.isAdded ? (
         <ButtonGroup>
