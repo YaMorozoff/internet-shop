@@ -15,7 +15,10 @@ export default (state = initialState, action) => {
     case ADD_TO_CART:
       return {
         ...state,
-        items: [...state.items, action.payload],
+        items:
+          action.payload.isAdded && action.payload.count === 1
+            ? [...state.items, action.payload]
+            : state.items,
       };
     case DELETE_FROM_CART:
       return {

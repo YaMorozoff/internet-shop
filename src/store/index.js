@@ -9,15 +9,15 @@ const composeEnhancers =
     ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
     : compose;
 
-// const persistedState = localStorage.getItem("reduxState")
-//   ? JSON.parse(localStorage.getItem("reduxState"))
-//   : {};
+const persistedState = localStorage.getItem("reduxState")
+  ? JSON.parse(localStorage.getItem("reduxState"))
+  : {};
 const store = createStore(
   reducers,
-  undefined,
+  persistedState,
   composeEnhancers(applyMiddleware(...middleware))
 );
-// store.subscribe(() => {
-//   localStorage.setItem("reduxState", JSON.stringify(store.getState()));
-// });
+store.subscribe(() => {
+  localStorage.setItem("reduxState", JSON.stringify(store.getState()));
+});
 export { store };

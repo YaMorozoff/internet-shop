@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a407cccb-46c3-4599-96ab-aa41d44fef72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/card/card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cartItem/CartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cartItem/CartItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/basket/basket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/basket/basket.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/fetchingAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/fetchingAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/addtocartAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/addtocartAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/cart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +87,7 @@
       <workItem from="1609142956986" duration="12882000" />
       <workItem from="1609311336671" duration="6035000" />
       <workItem from="1609317415300" duration="12417000" />
-      <workItem from="1609745910916" duration="148252000" />
+      <workItem from="1609745910916" duration="151808000" />
     </task>
     <servers />
   </component>
