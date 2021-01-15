@@ -1,7 +1,6 @@
-import "./App.css";
 import { renderRoutes } from "react-router-config";
 import { useEffect } from "react";
-import { fetchingAction } from "./store/actions/fetchingAction";
+import { fetchingAction } from "../store/actions/fetchingAction";
 import { connect } from "react-redux";
 
 function App({ route, fetchingAction }) {

@@ -1,6 +1,6 @@
 import { FETCH_DATA } from "../types";
 import axios from "axios";
-import { URL } from "../../constants";
+import { URL } from "../../constants/constants";
 export const fetchingAction = () => async (dispatch) => {
   // const local = localStorage.getItem("reduxState")
   //   ? JSON.parse(localStorage.getItem("reduxState")).cart
