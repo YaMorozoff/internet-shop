@@ -15,18 +15,11 @@ export default (state = initialState, action) => {
     case ADD_TO_CART:
       action.payload.isAdded = true;
       action.payload.count++;
-
-      // state.items.map((i) => i.id).includes(action.payload.id)
-      //   ? state.items.map(function (o) {
-      //     o.id === action.payload.id?return o.id++:o.id
-      //
-
       return {
         ...state,
         items:
           action.payload.isAdded && action.payload.count === 1
-            ? // !state.items.map((i) => i.id).includes(action.payload.id)
-              [...state.items, action.payload]
+            ? [...state.items, action.payload]
             : state.items,
       };
     case DELETE_FROM_CART:
@@ -38,16 +31,26 @@ export default (state = initialState, action) => {
         }),
       };
     case INCREMENT_ITEM:
-      action.payload.count++;
       return {
         ...state,
-        clickedItem: action.payload,
+        items: state.items.map((i) => {
+          if (action.payload.id === i.id) {
+            i.count++;
+            action.payload.count = i.count;
+          }
+          return i;
+        }),
       };
     case DECREMENT_ITEM:
-      action.payload.count--;
       return {
         ...state,
-        clickedItem: action.payload,
+        items: state.items.map((i) => {
+          if (action.payload.id === i.id) {
+            i.count--;
+            action.payload.count = i.count;
+          }
+          return i;
+        }),
       };
     default:
       return state;

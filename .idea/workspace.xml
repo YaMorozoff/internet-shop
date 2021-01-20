@@ -4,17 +4,10 @@
     <list default="true" id="a407cccb-46c3-4599-96ab-aa41d44fef72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/addtocartAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/addtocartAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/decrementAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/decrementAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/deletefromcartAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/deletefromcartAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/fetchingAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/fetchingAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/icrementAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/icrementAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/cart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Training" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -95,6 +89,7 @@
       <workItem from="1609311336671" duration="6035000" />
       <workItem from="1609317415300" duration="12417000" />
       <workItem from="1609745910916" duration="161211000" />
+      <workItem from="1610958333409" duration="26246000" />
     </task>
     <servers />
   </component>
@@ -111,6 +106,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

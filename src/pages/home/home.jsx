@@ -23,7 +23,7 @@ const Home = ({
       <Header sum={sum} />
       <Container>
         <Card.Group itemsPerRow={3}>
-          {fetching.map((item, i) => (
+          {fetching.map((item) => (
             <CardEl
               key={item.id}
               url={item.url}
