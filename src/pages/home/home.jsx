@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/header/header";
+import Footer from"../../components/footer/footer";
 import { fetchingAction } from "../../store/actions/fetchingAction";
 import { connect } from "react-redux";
 import { addToCart } from "../../store/actions/addtocartAction";
@@ -40,6 +41,7 @@ const Home = ({
           ))}
         </Card.Group>
       </Container>
+      <Footer/>
     </div>
   );
 };
