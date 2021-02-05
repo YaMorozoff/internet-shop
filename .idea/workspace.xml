@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a407cccb-46c3-4599-96ab-aa41d44fef72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/theme-button/theme-button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/theme-button/theme-button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/theme_context.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/cssChange.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/basket/basket.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/basket/basket.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/basket/basket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/basket/basket.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Routes.js" afterDir="false" />
-    </list>
+    <list default="true" id="a407cccb-46c3-4599-96ab-aa41d44fef72" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +100,7 @@
       <workItem from="1612266142026" duration="1189000" />
       <workItem from="1612267353858" duration="1023000" />
       <workItem from="1612268504088" duration="984000" />
-      <workItem from="1612271192992" duration="33029000" />
+      <workItem from="1612271192992" duration="33792000" />
     </task>
     <servers />
   </component>
