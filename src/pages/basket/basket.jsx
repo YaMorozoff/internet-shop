@@ -8,6 +8,7 @@ import { incrementItem } from "../../store/actions/icrementAction";
 import { decrementItem } from "../../store/actions/decrementAction";
 import "./basket.css";
 import Amount from "arui-feather/amount";
+import Footer from "../../components/footer/footer";
 
 const Basket = ({
   deleteFromCart,
@@ -26,47 +27,50 @@ const Basket = ({
     },
   };
   return (
-    <div className="App">
+    <div>
       <Header sum={sum} />
-      {!count ? (
-        <h1>Ваша корзина пуста</h1>
-      ) : (
-        <Container>
-          <Statistic>
-            <Statistic.Label>Итого:</Statistic.Label>
-            <Statistic.Value>
-              <Amount size={"xxl"} amount={AMOUNT} />
-            </Statistic.Value>
-          </Statistic>
-          <Button
-            basic
-            color="green"
-            size="massive"
-            floated="right"
-            style={{ marginTop: "15px" }}
-          >
-            Оформить заказ
-          </Button>
-          <hr />
-          <Item.Group>
-            {cart.map(function (item, i) {
-              return (
-                <CartItem
-                  key={i}
-                  url={item.url}
-                  decription={item.decription}
-                  size={item.size}
-                  price={item.price}
-                  delete={deleteFromCart.bind(this, item)}
-                  counter={item.count}
-                  plus={incrementItem.bind(this, item)}
-                  minus={decrementItem.bind(this, item)}
-                />
-              );
-            })}
-          </Item.Group>
-        </Container>
-      )}
+      <div className="some_body">
+        {!count ? (
+          <h1>Ваша корзина пуста</h1>
+        ) : (
+          <Container>
+            <Statistic>
+              <Statistic.Label>Итого:</Statistic.Label>
+              <Statistic.Value>
+                <Amount size={"xxl"} amount={AMOUNT} />
+              </Statistic.Value>
+            </Statistic>
+            <Button
+              basic
+              color="green"
+              size="massive"
+              floated="right"
+              style={{ marginTop: "15px" }}
+            >
+              Оформить заказ
+            </Button>
+            <hr />
+            <Item.Group>
+              {cart.map(function (item, i) {
+                return (
+                  <CartItem
+                    key={i}
+                    url={item.url}
+                    decription={item.decription}
+                    size={item.size}
+                    price={item.price}
+                    delete={deleteFromCart.bind(this, item)}
+                    counter={item.count}
+                    plus={incrementItem.bind(this, item)}
+                    minus={decrementItem.bind(this, item)}
+                  />
+                );
+              })}
+            </Item.Group>
+          </Container>
+        )}
+      </div>
+      <Footer />
     </div>
   );
 };

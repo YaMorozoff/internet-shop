@@ -8,10 +8,16 @@ import Routes from "./routes/Routes";
 import { Provider } from "react-redux";
 import { store } from "./store";
 
+import "./style/index.css";
+
+import ThemeProvider from "./context/theme_context";
+
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <div>{renderRoutes(Routes)}</div>
+      <ThemeProvider>
+        <div>{renderRoutes(Routes)}</div>
+      </ThemeProvider>
     </BrowserRouter>
   </Provider>,
   document.getElementById("root")

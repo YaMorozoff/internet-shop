@@ -11,10 +11,12 @@ export default [
         component: Home,
         path: "/",
         exact: true,
+        
       },
       {
         component: Basket,
         path: "/basket",
+        
       },
     ],
   },
