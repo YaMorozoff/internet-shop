@@ -4,23 +4,28 @@ import { Container, Icon, Image, Menu, Sticky } from "semantic-ui-react";
 import "./header.css";
 import logo from "./logo.png";
 
+import ThemeButton from "../theme-button/theme-button";
+
 const Header = (props) => {
   return (
     <Sticky>
-      <Menu className="menu-mrg" inverted icon="labeled">
+      <Menu className="menu-mrg" inverted>
         <Container>
-          {<Image size="small" src={logo}></Image>}
+          {<Image size="medium" src={logo} />}
           <Menu.Item as={Link} to="/">
-            <Icon name="home" />
-            Главная
+            <Icon size="big" name="home" />
+            <span>Главная</span>
           </Menu.Item>
-          <Menu.Item as={Link} to="basket">
+          <Menu.Item as={Link} to={`/basket/${props.sum}/${props}`}>
             <div className={props.sum ? "sum-logo" : "sum-logo-off"}>
               {props.sum}
             </div>
-            <Icon size="massive" name="shopping cart" />
+            <Icon size="big" name="shopping cart" />
 
-            <p>Корзина</p>
+            <span>Корзина</span>
+          </Menu.Item>
+          <Menu.Item position={"right"}>
+            <ThemeButton />
           </Menu.Item>
         </Container>
       </Menu>

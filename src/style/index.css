@@ -1,0 +1,21 @@
+:root {
+  --theme-dark-bgimage: #3c2f52;
+  --theme-light-bgimage: #ffffff;
+
+  --theme-dark-font: #b5b5b5;
+  --theme-light-font:#000000 ;
+
+  --theme-default-bgimage: var(--theme-light-bgimage);
+  --theme-default-font: var(--theme-dark-font);
+}
+
+
+body {
+  min-height: 300px;
+  background: var(--theme-default-bgimage);
+  transition: background 0.5s ease;
+  color:var(--theme-default-font);
+}
+h1{
+  font-family:cursive;
+}

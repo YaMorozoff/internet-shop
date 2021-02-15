@@ -34,8 +34,6 @@ export const fetchingAction = () => async (dispatch, getState) => {
       };
     });
   }
-  console.log(modifiedResponse);
-  console.log(cart);
 
   dispatch({
     type: FETCH_DATA,

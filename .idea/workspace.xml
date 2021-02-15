@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a407cccb-46c3-4599-96ab-aa41d44fef72" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/card.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/fetchingAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/fetchingAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/cart.js" afterDir="false" />
-    </list>
+    <list default="true" id="a407cccb-46c3-4599-96ab-aa41d44fef72" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,17 +22,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Training" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.cucumber.cucumber_node_package_dir" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Администратор\AppData\Roaming\npm\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -53,11 +49,11 @@
       <recent name="C:\Users\Администратор\Desktop\Anderson\internet-shop\src\store\actions" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.basket.jsx">
+  <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
-    <configuration name="basket.jsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/pages/basket/basket.jsx" working-dir="$PROJECT_DIR$/src/pages/basket">
+    <configuration name="basket.jsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="basket.jsx" working-dir="$PROJECT_DIR$/src/pages/basket">
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
@@ -70,6 +66,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="Node.js.basket.jsx" />
+      <item itemvalue="npm.npm start" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.basket.jsx" />
@@ -77,6 +78,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Администратор\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a407cccb-46c3-4599-96ab-aa41d44fef72" name="Default Changelist" comment="" />
@@ -90,6 +94,13 @@
       <workItem from="1609317415300" duration="12417000" />
       <workItem from="1609745910916" duration="161211000" />
       <workItem from="1610958333409" duration="26246000" />
+      <workItem from="1612180924815" duration="1150000" />
+      <workItem from="1612188457361" duration="7208000" />
+      <workItem from="1612265813832" duration="298000" />
+      <workItem from="1612266142026" duration="1189000" />
+      <workItem from="1612267353858" duration="1023000" />
+      <workItem from="1612268504088" duration="984000" />
+      <workItem from="1612271192992" duration="33792000" />
     </task>
     <servers />
   </component>
@@ -101,7 +112,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/feature-footer" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
